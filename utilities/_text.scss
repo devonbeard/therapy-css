@@ -1,0 +1,48 @@
+/**
+ * Text Horizontal Alignment
+ *
+ */
+
+.u-text {
+  text-align: inherit !important;
+
+  &--c {
+    text-align: center !important;
+  }
+
+  &--r {
+    text-align: right !important;
+  }
+
+  &--l {
+    text-align: left !important;
+  }
+
+  &--j {
+    text-align: justify !important;
+  }
+}
+
+.u-text {
+  &--uc {
+    text-transform: uppercase
+  }
+
+  &--lc {
+    text-transform: lowercase;
+  }
+}
+
+
+
+/**
+ * Text Truncation
+ *
+ */
+
+.u-text--truncate {
+  max-width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}

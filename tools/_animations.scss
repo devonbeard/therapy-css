@@ -1,0 +1,133 @@
+/**
+ *
+ * Animations
+ *
+ */
+
+
+
+ /**
+  *
+  * Buttons
+  *
+  */
+.btn--click-effect {
+  overflow: hidden;
+}
+
+.btn--click-circle{
+  display: block;
+  position: absolute;
+  background: rgba(0,0,0,.075);
+  border-radius: 50%;
+  transform: scale(0);
+
+  &.animate{
+    animation: effect 0.5s linear;
+  }
+}
+
+ @keyframes effect{
+  100%{
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+
+.fadeIn{
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+
+  animation-duration: .75s;
+  -webkit-animation-duration: .75s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInFast{
+  animation-name: fadeInFast;
+  -webkit-animation-name: fadeInFast;
+
+  animation-duration: .35s;
+  -webkit-animation-duration: .35s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes fadeInFast {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInFast {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInScale{
+  animation-name: fadeInScale;
+  -webkit-animation-name: fadeInScale;
+
+  animation-duration: .25s;
+  -webkit-animation-duration: .25s;
+
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+  visibility: visible !important;
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: scale(.75);
+    opacity: 0.0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInScale {
+  0% {
+    -webkit-transform: scale(.75);
+    opacity: 0.0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}

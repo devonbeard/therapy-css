@@ -1,0 +1,54 @@
+/* ::FORMS */
+/* ------------------------------------------------------------ */
+
+.label {
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  width: 100%;
+  @include therapy-font-size(16);
+  @include therapy-transition(all);
+
+  span {
+    margin-bottom: 5px;
+  }
+
+}
+
+
+.input {
+  border: 0;
+  color: $shark;
+  display: block;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  padding: 20px;
+  @include therapy-font-size(20);
+  @include therapy-rgba( #fff, .5);
+  @include therapy-transition(all);
+
+  &:hover, &:focus {
+    @include therapy-rgba( #fff, 1);
+    outline: 0;
+  }
+
+  @include break(large) {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.label--error {
+  color: $error !important;
+
+  span {
+    color: inherit !important;
+  }
+}
+
+.input--error {
+  background: $error !important;
+  color: #455A64 !important;
+}

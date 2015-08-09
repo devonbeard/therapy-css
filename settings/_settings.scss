@@ -1,0 +1,87 @@
+/**
+ * THERAPY Settings
+ *
+ * This manifest controls the rest of this framework.
+ * You should only have to update the defaults from here or your theme overrides.
+ * The point of this is to never touch any of the other code in the framework.
+ */
+
+
+
+
+/**
+ * Therapy Prefix
+ *
+ * This is incase you want to use in an exist framework, to fight conflicts.
+ * To use just change null to whatever you'd like followed by a dash `-`!
+ * Example: therapy-
+ */
+// $therapy-prefix : therapy- !default;
+
+
+
+/**
+ * Font Settings.
+ *
+ * Therapy uses REM with a pixel fallback for font sizes,
+ * the base REM is 10px so calucaltions are easy,
+ * ( pixel size / base pixel size = rem)
+ * Example: ( 26 / 10 = 2.6rem )
+ * When declaring font sizes don't include px, rem, or em's
+ * let the framework do add them for you.
+ */
+$therapy-base-font-size   : 10 !default;
+$therapy-base-line-height : 1.25 !default;
+$therapy-body-font-size   : 16 !default;
+
+
+/**
+ * Spacing Settings.
+ *
+ * These are used for margins/paddings
+ */
+$therapy-base-spacing     : 10px !default;
+$therapy-base-spacing--xs : round( $therapy-base-spacing * .25 ) !default;
+$therapy-base-spacing--s  : round( $therapy-base-spacing * .5 ) !default;
+$therapy-base-spacing--l  : round( $therapy-base-spacing * 2 ) !default;
+$therapy-base-spacing--xl : round( $therapy-base-spacing * 3 ) !default;
+
+
+
+/**
+ * Base level colors
+ */
+$therapy-base-background-color : #fff !default;
+$therapy-base-text-color       : #333 !default;
+$therapy-base-font-size        : 16 !default;
+$therapy-letter-spacing        : 1px !default;
+
+
+
+/**
+ * Heading Settings
+ */
+$therapy-heading-size-1 : 48 !default;
+$therapy-heading-size-2 : 36 !default;
+$therapy-heading-size-3 : 30 !default;
+$therapy-heading-size-4 : 24 !default;
+$therapy-heading-size-5 : 20 !default;
+$therapy-heading-size-6 : 14 !default;
+
+
+
+/**
+ * Button Settings
+ */
+$therapy-button-spacing-vertical   : 10px !default;
+$therapy-button-spacing-horizontal : 30px !default;
+$therapy-button-font-size          : 20px !default;
+
+
+/**
+ * Media Query Sizes
+ */
+$therapy-phone-size: 450px;
+$therapy-tablet-size: 850px;
+$therapy-desktop-size: 960px;
+$therapy-desktop-size-large: 1440px;

@@ -1,0 +1,13 @@
+/**
+ * Fonts:
+ *
+ *
+ */
+
+@mixin font--main {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@mixin font--secondary {
+  font-family: Georgia, serif;
+}

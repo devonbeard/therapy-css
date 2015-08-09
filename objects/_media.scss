@@ -1,0 +1,54 @@
+/**
+ * Media Object
+ *
+ * First introduced by Nicole Sullivan within OOCSS
+ *
+ */
+
+.o-media {
+  @extend %cf;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+
+.o-media__img {
+  float: left;
+  margin-right: $therapy-base-spacing;
+
+  > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /**
+   * Media Object Image Reversed
+   *
+   * Floats the image to the right
+   *
+   */
+  &--rev {
+    float: right;
+    margin-left: $therapy-base-spacing;
+    margin-right: 0;
+
+    @include break(small) {
+      margin-left: 0;
+    }
+  }
+
+  @include break(small) {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.o-media__body {
+  overflow: hidden;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}

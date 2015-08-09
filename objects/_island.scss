@@ -1,0 +1,39 @@
+/**
+ * Island
+ *
+ * Area surrounded by padding
+ *
+ */
+ // $therapy-island-spacing: 25px;
+
+%o-island {
+  @extend %cf;
+}
+
+
+.o-island {
+  &--xs {
+    padding: 10px 10px;
+  }
+
+  &--s {
+    padding: 25px 20px;
+  }
+
+  &--m {
+    padding: 40px 20px;
+  }
+
+  &--l {
+    padding: 75px 20px;
+  }
+
+  &--xl {
+    padding: 100px 20px;
+
+    @include break(small) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}

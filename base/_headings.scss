@@ -1,0 +1,50 @@
+/* ::HEADING ELEMENTS */
+/* ------------------------------------------------------------ */
+%heading-defaults {
+  font-weight: normal;
+  line-height: $therapy-base-line-height;
+  margin-bottom: $therapy-base-spacing;
+}
+
+h1,
+.h1,
+%h1 {
+  @extend %heading-defaults;
+  @include therapy-font-size($therapy-heading-size-1);
+}
+
+h2,
+.h2,
+%h2 {
+  @extend %heading-defaults;
+  @include therapy-font-size($therapy-heading-size-2);
+}
+
+h3,
+.h3,
+%h3 {
+  @extend %heading-defaults;
+  @include therapy-font-size($therapy-heading-size-3);
+}
+
+h4,
+.h4,
+%h4 {
+  @extend %heading-defaults;
+  @include therapy-font-size($therapy-heading-size-4);
+}
+
+h5,
+.h5,
+%h5 {
+  @extend %heading-defaults;
+  @include therapy-font-size($therapy-heading-size-5);
+}
+
+h6,
+.h6,
+%h6 {
+  @extend %heading-defaults;
+  @include therapy-font-size($therapy-heading-size-6);
+}
+

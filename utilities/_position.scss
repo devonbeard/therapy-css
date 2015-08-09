@@ -1,0 +1,21 @@
+/**
+ * Position
+ *
+ */
+
+.u-pos {
+  position: static !important;
+
+  &--a {
+    position: absolute !important;
+  }
+
+  &--f {
+    position: fixed !important;
+  }
+
+  &--r {
+    position: relative !important;
+  }
+
+}

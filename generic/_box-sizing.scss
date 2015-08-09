@@ -1,0 +1,11 @@
+/* ::Border Box Global Fix */
+/* ------------------------------------------------------------ */
+html {
+  @include therapy-box-sizing(border-box);
+}
+
+*,
+*:before,
+*:after {
+  @include therapy-box-sizing(inherit);
+}

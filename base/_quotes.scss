@@ -1,0 +1,19 @@
+/* ::QUOTES */
+/* ------------------------------------------------------------ */
+$blockquote-font-size--l: 48;
+$blockquote-font-size--m: 40;
+$blockquote-font-size--s: 30;
+
+blockquote {
+  @include freight;
+  @include therapy-font-size($blockquote-font-size--s);
+  letter-spacing: $therapy-letter-spacing;
+
+  @include break(medium) {
+    @include therapy-font-size($blockquote-font-size--m);
+  }
+
+  @include break(large) {
+    @include therapy-font-size($blockquote-font-size--l);
+  }
+}

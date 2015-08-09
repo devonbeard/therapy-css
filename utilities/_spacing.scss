@@ -1,0 +1,288 @@
+/**
+ * Spacing Trumps (Margins & Paddings)
+ *
+ * These are based on $therapy-base-spacing
+ * Naming is based on property margin/padding `.m` or `.p`
+ * Then the property if required, example for margin left: .ml
+ * Following the name is the size of the margin
+ */
+$therapy-base-spacing: $therapy-base-spacing !default;
+
+
+
+// Margin Spacing
+.u-m {
+  margin: $therapy-base-spacing !important;
+
+  &--n {
+    margin: 0 !important;
+  }
+
+  &--xs {
+    margin: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    margin: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    margin: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    margin: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    margin: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-mt {
+  margin-top: $therapy-base-spacing !important;
+
+  &--n {
+    margin-top: 0 !important;
+  }
+
+  &--xs {
+    margin-top: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    margin-top: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    margin-top: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    margin-top: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    margin-top: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-mr {
+  margin-right: $therapy-base-spacing !important;
+
+  &--n {
+    margin-right: 0 !important;
+  }
+
+  &--xs {
+    margin-right: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    margin-right: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    margin-right: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    margin-right: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    margin-right: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-mb {
+  margin-bottom: $therapy-base-spacing !important;
+
+  &--n {
+    margin-bottom: 0 !important;
+  }
+
+  &--xs {
+    margin-bottom: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    margin-bottom: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    margin-bottom: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    margin-bottom: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    margin-bottom: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-ml {
+  margin-left: $therapy-base-spacing !important;
+
+  &--n {
+    margin-left: 0 !important;
+  }
+
+  &--xs {
+    margin-left: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    margin-left: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    margin-left: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    margin-left: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    margin-left: $therapy-base-spacing--xl !important;
+  }
+}
+
+.u-m--a {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+// Padding Spacing
+.u-p {
+  padding: $therapy-base-spacing !important;
+
+  &--xs {
+    padding: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    padding: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    padding: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    padding: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    padding: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-pt {
+  padding-top: $therapy-base-spacing !important;
+
+  &--xs {
+    padding-top: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    padding-top: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    padding-top: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    padding-top: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    padding-top: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-pr {
+  padding-right: $therapy-base-spacing !important;
+
+  &--xs {
+    padding-right: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    padding-right: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    padding-right: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    padding-right: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    padding-right: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-pb {
+  padding-bottom: $therapy-base-spacing !important;
+
+  &--xs {
+    padding-bottom: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    padding-bottom: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    padding-bottom: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    padding-bottom: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    padding-bottom: $therapy-base-spacing--xl !important;
+  }
+}
+
+
+.u-pl {
+  padding-left: $therapy-base-spacing !important;
+
+  &--xs {
+    padding-left: $therapy-base-spacing--xs !important;
+  }
+
+  &--s {
+    padding-left: $therapy-base-spacing--s !important;
+  }
+
+  &--m {
+    padding-left: $therapy-base-spacing !important;
+  }
+
+  &--l {
+    padding-left: $therapy-base-spacing--l !important;
+  }
+
+  &--xl {
+    padding-left: $therapy-base-spacing--xl !important;
+  }
+}

@@ -1,0 +1,29 @@
+/**
+ * Display
+ */
+
+.u-display {
+  display: inherit !important;
+
+  &--b {
+    display: block !important;
+  }
+
+  &--ib {
+    display: inline-block !important;
+  }
+
+  &--n {
+    display: none !important;
+  }
+
+  &--t {
+    display: table !important;
+    vertical-align: top !important;
+  }
+
+  &--tc {
+    display: table-cell !important;
+    vertical-align: top !important;
+  }
+}

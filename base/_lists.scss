@@ -1,0 +1,18 @@
+/* ::LISTS */
+/* ------------------------------------------------------------ */
+ul, ol {
+  letter-spacing: $therapy-letter-spacing;
+}
+
+li {
+
+}
+
+.list--block {
+  list-style: none;
+
+  li {
+    display: block;
+    margin-bottom: $therapy-base-spacing--l;
+  }
+}

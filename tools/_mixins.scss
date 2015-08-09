@@ -1,0 +1,207 @@
+/* ::Border Radius */
+/* ------------------------------------------------------------ */
+@mixin therapy-box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+    -moz-box-sizing: $box-model; // Firefox <= 19
+      box-sizing: $box-model;
+}
+
+
+
+
+
+/* ::Border Radius */
+/* ------------------------------------------------------------ */
+@mixin therapy-border-radius($radius) {
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+@mixin therapy-border-top-radius($radius) {
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin therapy-border-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin therapy-border-bottom-radius($radius) {
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin therapy-border-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+
+
+
+
+/* ::Center Block: center any element within its parent */
+/* ------------------------------------------------------------ */
+@mixin therapy-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* ::Font Size */
+/* ------------------------------------------------------------ */
+@mixin therapy-font-size($font-size: $therapy-base-font-size) {
+  font-size: ($font-size) + px;
+  font-size: ($font-size / $therapy-base-font-size) + rem;
+}
+
+
+
+
+
+/* ::HEX to RGB - http://codepen.io/sturobson/pen/hdKyv */
+/* ------------------------------------------------------------ */
+@mixin therapy-rgba($color, $value) {
+  background-color: $color;
+  background-color: rgba($color, $value);
+}
+
+
+
+
+
+/* ::List Item Styles */
+/* ------------------------------------------------------------ */
+@mixin therapy-unordered {
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+@mixin therapy-ordered {
+  list-style-position: outside;
+  list-style-type: decimal;
+}
+
+@mixin therapy-nobullet {
+  list-style-type: none;
+}
+
+
+
+
+/* ::Media Break Points */
+/* ------------------------------------------------------------ */
+@mixin break($point) {
+  @if $point == small {
+    @media screen and ( max-width: $therapy-phone-size ) {
+      @content;
+    }
+  }
+  @else if $point == medium {
+    @media screen and ( min-width: $therapy-phone-size + 1 ) and ( max-width: $therapy-desktop-size ) {
+      @content;
+    }
+  }
+  @else if $point == large {
+    @media screen and ( min-width: $therapy-desktop-size )  {
+      @content;
+    }
+  }
+  @else if $point == xlarge {
+    @media screen and ( min-width: $therapy-desktop-size-large )  {
+      @content;
+    }
+  }
+}
+
+
+
+
+/* ::Opacity */
+/* ------------------------------------------------------------ */
+@mixin therapy-opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+
+
+
+/* ::Retina Images - https://signalvnoise.com/posts/3271-easy-retina-ready-images-using-scss */
+/* ------------------------------------------------------------ */
+@mixin therapy-image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+
+
+
+/* ::Transitions */
+/* ------------------------------------------------------------ */
+@mixin therapy-transition($type: color, $speed: .2s, $animation: ease-in-out) {
+  -webkit-transition: $type $speed $animation;
+  transition: $type $speed $animation;
+}
+
+
+/* ::Perfect Full page background image */
+/* ------------------------------------------------------------ */
+@mixin bg-cover-image() {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-parallax-image() {
+  background-attachment: fixed;
+  @include bg-cover-image();
+}
+
+.bg--cover-image {
+  @include bg-cover-image();
+}
+
+.bg--parallax-image {
+  @include bg-parallax-image();
+}
+
+
+/* ::Perfect Full page background image */
+/* ------------------------------------------------------------ */
+
+@mixin therapy-flex() {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin therapy-flex-grow( $number: 1 ) {
+  -webkit-flex-grow: $number;
+  flex-grow: $number;
+}

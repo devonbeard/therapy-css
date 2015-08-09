@@ -1,0 +1,126 @@
+/**
+ * Buttons
+ *
+ * VARIABLES
+ * $therapy-button-spacing-vertical
+ * $therapy-button-spacing-horizontal
+ *
+ */
+
+
+/**
+ *
+ * Button Variables
+ *
+ * Based on the default button spacing
+ * Includes extra small through extra large
+ *
+ */
+$therapy-button-spacing-vertical--xs   : round( $therapy-button-spacing-vertical * .25 );
+$therapy-button-spacing-vertical--s    : round( $therapy-button-spacing-vertical * .5 );
+$therapy-button-spacing-vertical--m    : round( $therapy-button-spacing-vertical );
+$therapy-button-spacing-vertical--l    : round( $therapy-button-spacing-vertical * 1.5 );
+$therapy-button-spacing-vertical--xl   : round( $therapy-button-spacing-vertical * 2 );
+
+$therapy-button-spacing-horizontal--xs : round( $therapy-button-spacing-vertical--xs * 2 );
+$therapy-button-spacing-horizontal--s  : round( $therapy-button-spacing-vertical--s * 2);
+$therapy-button-spacing-horizontal--m  : round( $therapy-button-spacing-vertical--m * 2 );
+$therapy-button-spacing-horizontal--l  : round( $therapy-button-spacing-vertical--l * 2 );
+$therapy-button-spacing-horizontal--xl : round( $therapy-button-spacing-vertical--xl * 2 );
+
+
+
+/**
+ * Button Defaults
+ *
+ */
+.btn {
+  border: 0;
+  display: inline-block;
+  min-width: 110px;
+  outline: 0;
+  position: relative;
+  text-align: center;
+
+  @include therapy-font-size(20);
+  @include therapy-transition(all);
+}
+
+
+
+
+/**
+ * Button Sizes
+ *
+ */
+.btn {
+  &--xs {
+    padding: $therapy-button-spacing-vertical--xs auto;
+  }
+
+  &--s {
+    padding: $therapy-button-spacing-vertical--s $therapy-button-spacing-horizontal--s;
+  }
+
+  &--m {
+    padding: $therapy-button-spacing-vertical--m $therapy-button-spacing-horizontal--m;
+  }
+
+  &--l {
+    padding: $therapy-button-spacing-vertical--l $therapy-button-spacing-horizontal--l;
+  }
+
+  &--xl {
+    padding: $therapy-button-spacing-vertical--xl $therapy-button-spacing-horizontal--xl;
+  }
+}
+
+
+/**
+ * Button Shapes
+ *
+ */
+.btn--square {
+  @include therapy-border-radius(0);
+}
+
+
+.btn {
+  &--round--s {
+    @include therapy-border-radius(3px);
+  }
+
+  &--round--m {
+    @include therapy-border-radius(5px);
+  }
+
+  &--round--l {
+    @include therapy-border-radius(10px);
+  }
+}
+
+
+.btn--pill {
+  text-transform: uppercase;
+  @include therapy-border-radius(40px);
+}
+
+
+
+/**
+ * Button Outline
+ *
+ */
+.btn {
+  &--outline {
+    border: 1px solid;
+  }
+
+  &--outline--m {
+    border: 2px solid;
+  }
+
+  &--outline--l {
+    border: 3px solid;
+  }
+}

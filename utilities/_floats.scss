@@ -1,0 +1,18 @@
+/**
+ * Floats
+ *
+ */
+
+.u-float {
+  &--l {
+    float: left !important;
+  }
+
+  &--n {
+    float: none !important;
+  }
+
+  &--r {
+    float: right !important;
+  }
+}
